@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lissajous Tool</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    } 
+
+    .about {
+      color: #fff;
+      font-family: Helvetica, sans-serif;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+
+    #controls {
+      position: absolute;
+      background-color: #000;
+      top: 0;
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="about">
+    Lissajous controls — Click the canvas to pause/play the waveform animation.
+  </div>
+
+  <div id="controls"></div>
+
+</body>
+
+  <!-- Libraries need to be loaded in order -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js'></script>
+  <script src="js/lib/dat.gui.min.js"></script>
+  <script src="js/ControlsHandler.js"></script>
+  <!-- P5.js -->
+  <script src="js/lib/p5.js"></script>
+  <script src="js/lib/p5.dom.js"></script>
+  <script src="js/lib/p5.sound.js"></script>
+  <!-- Oscillator -->
+  <script src="js/lissajous.js"></script>
+</html>
